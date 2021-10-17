@@ -1,5 +1,5 @@
 {
-    "name": "auth3/examples-admin",
+    "name": "auth3-dev/examples-admin",
     "description": "",
     "require": {
         "auth3-dev/auth3-sdk": "^1.0.0"
