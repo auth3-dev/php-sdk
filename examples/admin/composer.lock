@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "67ce576120740c2f20df861b5ca7e05f",
+    "content-hash": "d67d2797bf51588a85191c43ce614022",
     "packages": [
+        {
+            "name": "auth3-dev/auth3-sdk",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "../..",
+                "reference": "e0662c877ea991c6a69f0b39f820035c0d075e3b"
+            },
+            "require": {
+                "google/protobuf": "^v3.18.0",
+                "grpc/grpc": "^v1.39.0",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Auth3\\Identity\\Admin": "admin/",
+                    "GPBMetadata\\": "admin/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Auth3.dev"
+                }
+            ],
+            "description": "Library for the Auth3 Identity Platform APIs, learn more at https://auth3.dev/.",
+            "keywords": [
+                "auth3",
+                "authentication",
+                "authorization",
+                "identity",
+                "oauth2"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "google/protobuf",
             "version": "v3.18.1",
@@ -102,9 +142,7 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.0.0"
-    },
+    "platform": [],
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }

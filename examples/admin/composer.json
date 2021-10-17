@@ -1,0 +1,13 @@
+{
+    "name": "auth3/examples-admin",
+    "description": "",
+    "require": {
+        "auth3-dev/auth3-sdk": "^1.0.0"
+    },
+    "repositories": [
+        {
+          "type": "path",
+          "url": "../../"
+        }
+    ]
+}

@@ -3,8 +3,10 @@
 	"name": "auth3-dev/auth3-sdk",
 	"type": "library",
 	"description": "Library for the Auth3 Identity Platform APIs, learn more at https://auth3.dev/.",
-	"keywords": ["auth3", "authentication", "oauth2"],
+	"keywords": ["auth3", "authentication", "oauth2", "identity", "authorization"],
 	"license": "Apache-2.0",
+	"version": "1.0.0",
+	"homepage": "https://auth3.dev",
 	"authors": [
 		{
 			"name": "Auth3.dev"
@@ -12,10 +14,13 @@
 	],
 	"require": {
         "php": ">=7.0.0",
-        "grpc/grpc": "1.39.0",
-        "google/protobuf": "3.18.0"
+        "grpc/grpc": "^v1.39.0",
+        "google/protobuf": "^v3.18.0"
     },
 	"autoload": {
-		"classmap": ["admin/"]
+		"psr-0": {
+            "Auth3\\Identity\\Admin": "admin/",
+            "GPBMetadata\\": "admin/"
+        }
 	}
 }
