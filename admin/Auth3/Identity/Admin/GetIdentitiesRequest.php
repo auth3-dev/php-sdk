@@ -13,6 +13,14 @@ use Google\Protobuf\Internal\GPBUtil;
  */
 class GetIdentitiesRequest extends \Google\Protobuf\Internal\Message
 {
+    /**
+     * Generated from protobuf field <code>int32 page_size = 1[json_name = "pageSize"];</code>
+     */
+    protected $page_size = 0;
+    /**
+     * Generated from protobuf field <code>string page_token = 2[json_name = "pageToken"];</code>
+     */
+    protected $page_token = '';
 
     /**
      * Constructor.
@@ -20,11 +28,57 @@ class GetIdentitiesRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
+     *     @type int $page_size
+     *     @type string $page_token
      * }
      */
     public function __construct($data = NULL) {
         \GPBMetadata\Devtools\Auth\V0\Proto\Identity\Admin\Admin::initOnce();
         parent::__construct($data);
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page_size = 1[json_name = "pageSize"];</code>
+     * @return int
+     */
+    public function getPageSize()
+    {
+        return $this->page_size;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page_size = 1[json_name = "pageSize"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPageSize($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->page_size = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string page_token = 2[json_name = "pageToken"];</code>
+     * @return string
+     */
+    public function getPageToken()
+    {
+        return $this->page_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string page_token = 2[json_name = "pageToken"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPageToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->page_token = $var;
+
+        return $this;
     }
 
 }

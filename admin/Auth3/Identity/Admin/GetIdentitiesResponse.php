@@ -17,6 +17,14 @@ class GetIdentitiesResponse extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .depot.devtools.auth.v0.identity.admin.GetIdentitiesResponse.Identity identities = 1[json_name = "identities"];</code>
      */
     private $identities;
+    /**
+     * Generated from protobuf field <code>string next_page_token = 2[json_name = "nextPageToken"];</code>
+     */
+    protected $next_page_token = '';
+    /**
+     * Generated from protobuf field <code>int32 total_size = 3[json_name = "totalSize"];</code>
+     */
+    protected $total_size = 0;
 
     /**
      * Constructor.
@@ -25,6 +33,8 @@ class GetIdentitiesResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Auth3\Identity\Admin\GetIdentitiesResponse\Identity[]|\Google\Protobuf\Internal\RepeatedField $identities
+     *     @type string $next_page_token
+     *     @type int $total_size
      * }
      */
     public function __construct($data = NULL) {
@@ -50,6 +60,50 @@ class GetIdentitiesResponse extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Auth3\Identity\Admin\GetIdentitiesResponse\Identity::class);
         $this->identities = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string next_page_token = 2[json_name = "nextPageToken"];</code>
+     * @return string
+     */
+    public function getNextPageToken()
+    {
+        return $this->next_page_token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string next_page_token = 2[json_name = "nextPageToken"];</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setNextPageToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->next_page_token = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 total_size = 3[json_name = "totalSize"];</code>
+     * @return int
+     */
+    public function getTotalSize()
+    {
+        return $this->total_size;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 total_size = 3[json_name = "totalSize"];</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setTotalSize($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->total_size = $var;
 
         return $this;
     }

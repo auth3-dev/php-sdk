@@ -45,6 +45,20 @@ class AdminClient extends \Grpc\BaseStub {
     }
 
     /**
+     * @param \Auth3\Identity\Admin\GetIdentityByIdentifierRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GetIdentityByIdentifier(\Auth3\Identity\Admin\GetIdentityByIdentifierRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/depot.devtools.auth.v0.identity.admin.Admin/GetIdentityByIdentifier',
+        $argument,
+        ['\Auth3\Identity\Admin\GetIdentityByIdentifierResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * @param \Auth3\Identity\Admin\GetIdentitiesByAttributeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
