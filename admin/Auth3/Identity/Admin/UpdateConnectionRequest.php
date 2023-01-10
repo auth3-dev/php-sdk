@@ -14,10 +14,6 @@ use Google\Protobuf\Internal\GPBUtil;
 class UpdateConnectionRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
-     */
-    protected $name = '';
-    /**
      * Generated from protobuf field <code>string client_id = 2[json_name = "clientId"];</code>
      */
     protected $client_id = '';
@@ -60,7 +56,6 @@ class UpdateConnectionRequest extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $name
      *     @type string $client_id
      *     @type string $client_secret
      *     @type string $button_image_url
@@ -75,28 +70,6 @@ class UpdateConnectionRequest extends \Google\Protobuf\Internal\Message
     public function __construct($data = NULL) {
         \GPBMetadata\Devtools\Auth\V0\Proto\Identity\Admin\Admin::initOnce();
         parent::__construct($data);
-    }
-
-    /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setName($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->name = $var;
-
-        return $this;
     }
 
     /**
