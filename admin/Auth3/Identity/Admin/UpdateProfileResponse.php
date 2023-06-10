@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.UpdateTraitsResponse</code>
+ * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.UpdateProfileResponse</code>
  */
-class UpdateTraitsResponse extends \Google\Protobuf\Internal\Message
+class UpdateProfileResponse extends \Google\Protobuf\Internal\Message
 {
 
     /**

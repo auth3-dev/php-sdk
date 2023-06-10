@@ -9,18 +9,18 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.UpdateTraitsRequest</code>
+ * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.UpdateProfileRequest</code>
  */
-class UpdateTraitsRequest extends \Google\Protobuf\Internal\Message
+class UpdateProfileRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string identity_id = 1[json_name = "identityId"];</code>
      */
     protected $identity_id = '';
     /**
-     * Generated from protobuf field <code>string traits = 2[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 2[json_name = "profile"];</code>
      */
-    protected $traits = '';
+    protected $profile = '';
 
     /**
      * Constructor.
@@ -29,7 +29,7 @@ class UpdateTraitsRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $identity_id
-     *     @type string $traits
+     *     @type string $profile
      * }
      */
     public function __construct($data = NULL) {
@@ -60,23 +60,23 @@ class UpdateTraitsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string traits = 2[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 2[json_name = "profile"];</code>
      * @return string
      */
-    public function getTraits()
+    public function getProfile()
     {
-        return $this->traits;
+        return $this->profile;
     }
 
     /**
-     * Generated from protobuf field <code>string traits = 2[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 2[json_name = "profile"];</code>
      * @param string $var
      * @return $this
      */
-    public function setTraits($var)
+    public function setProfile($var)
     {
         GPBUtil::checkString($var, True);
-        $this->traits = $var;
+        $this->profile = $var;
 
         return $this;
     }

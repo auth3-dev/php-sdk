@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class CreateConnectionResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      */
-    protected $name = '';
+    protected $id = '';
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class CreateConnectionResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $name
+     *     @type string $id
      * }
      */
     public function __construct($data = NULL) {
@@ -33,23 +33,23 @@ class CreateConnectionResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      * @return string
      */
-    public function getName()
+    public function getId()
     {
-        return $this->name;
+        return $this->id;
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->name = $var;
+        $this->id = $var;
 
         return $this;
     }

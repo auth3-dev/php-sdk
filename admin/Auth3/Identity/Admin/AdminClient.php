@@ -157,30 +157,30 @@ class AdminClient extends \Grpc\BaseStub {
     }
 
     /**
-     * @param \Auth3\Identity\Admin\GetTraitsRequest $argument input argument
+     * @param \Auth3\Identity\Admin\GetProfileRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function GetTraits(\Auth3\Identity\Admin\GetTraitsRequest $argument,
+    public function GetProfile(\Auth3\Identity\Admin\GetProfileRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/depot.devtools.auth.v0.identity.admin.Admin/GetTraits',
+        return $this->_simpleRequest('/depot.devtools.auth.v0.identity.admin.Admin/GetProfile',
         $argument,
-        ['\Auth3\Identity\Admin\GetTraitsResponse', 'decode'],
+        ['\Auth3\Identity\Admin\GetProfileResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Auth3\Identity\Admin\UpdateTraitsRequest $argument input argument
+     * @param \Auth3\Identity\Admin\UpdateProfileRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      * @return \Grpc\UnaryCall
      */
-    public function UpdateTraits(\Auth3\Identity\Admin\UpdateTraitsRequest $argument,
+    public function UpdateProfile(\Auth3\Identity\Admin\UpdateProfileRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/depot.devtools.auth.v0.identity.admin.Admin/UpdateTraits',
+        return $this->_simpleRequest('/depot.devtools.auth.v0.identity.admin.Admin/UpdateProfile',
         $argument,
-        ['\Auth3\Identity\Admin\UpdateTraitsResponse', 'decode'],
+        ['\Auth3\Identity\Admin\UpdateProfileResponse', 'decode'],
         $metadata, $options);
     }
 

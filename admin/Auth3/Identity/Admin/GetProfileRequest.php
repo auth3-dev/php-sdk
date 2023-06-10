@@ -9,9 +9,9 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.GetTraitsRequest</code>
+ * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.GetProfileRequest</code>
  */
-class GetTraitsRequest extends \Google\Protobuf\Internal\Message
+class GetProfileRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Generated from protobuf field <code>string identity_id = 1[json_name = "identityId"];</code>

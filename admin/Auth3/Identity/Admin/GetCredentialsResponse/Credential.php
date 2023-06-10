@@ -34,9 +34,9 @@ class Credential extends \Google\Protobuf\Internal\Message
      */
     protected $type = 0;
     /**
-     * Generated from protobuf field <code>string name = 6[json_name = "name"];</code>
+     * Generated from protobuf field <code>string connection_id = 6[json_name = "connectionId"];</code>
      */
-    protected $name = '';
+    protected $connection_id = '';
     /**
      * Generated from protobuf field <code>bool configured = 7[json_name = "configured"];</code>
      */
@@ -53,7 +53,7 @@ class Credential extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $updated_at
      *     @type string $identity_id
      *     @type int $type
-     *     @type string $name
+     *     @type string $connection_id
      *     @type bool $configured
      * }
      */
@@ -173,23 +173,23 @@ class Credential extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 6[json_name = "name"];</code>
+     * Generated from protobuf field <code>string connection_id = 6[json_name = "connectionId"];</code>
      * @return string
      */
-    public function getName()
+    public function getConnectionId()
     {
-        return $this->name;
+        return $this->connection_id;
     }
 
     /**
-     * Generated from protobuf field <code>string name = 6[json_name = "name"];</code>
+     * Generated from protobuf field <code>string connection_id = 6[json_name = "connectionId"];</code>
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setConnectionId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->name = $var;
+        $this->connection_id = $var;
 
         return $this;
     }

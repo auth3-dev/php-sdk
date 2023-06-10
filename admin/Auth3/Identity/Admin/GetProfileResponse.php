@@ -9,14 +9,14 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.GetTraitsResponse</code>
+ * Generated from protobuf message <code>depot.devtools.auth.v0.identity.admin.GetProfileResponse</code>
  */
-class GetTraitsResponse extends \Google\Protobuf\Internal\Message
+class GetProfileResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string traits = 1[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 1[json_name = "profile"];</code>
      */
-    protected $traits = '';
+    protected $profile = '';
 
     /**
      * Constructor.
@@ -24,7 +24,7 @@ class GetTraitsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $traits
+     *     @type string $profile
      * }
      */
     public function __construct($data = NULL) {
@@ -33,23 +33,23 @@ class GetTraitsResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string traits = 1[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 1[json_name = "profile"];</code>
      * @return string
      */
-    public function getTraits()
+    public function getProfile()
     {
-        return $this->traits;
+        return $this->profile;
     }
 
     /**
-     * Generated from protobuf field <code>string traits = 1[json_name = "traits"];</code>
+     * Generated from protobuf field <code>string profile = 1[json_name = "profile"];</code>
      * @param string $var
      * @return $this
      */
-    public function setTraits($var)
+    public function setProfile($var)
     {
         GPBUtil::checkString($var, True);
-        $this->traits = $var;
+        $this->profile = $var;
 
         return $this;
     }

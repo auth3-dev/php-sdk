@@ -14,9 +14,9 @@ use Google\Protobuf\Internal\GPBUtil;
 class Connection extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      */
-    protected $name = '';
+    protected $id = '';
     /**
      * Generated from protobuf field <code>string client_id = 2[json_name = "clientId"];</code>
      */
@@ -46,15 +46,11 @@ class Connection extends \Google\Protobuf\Internal\Message
      */
     protected $type = 0;
     /**
-     * Generated from protobuf field <code>string id = 10[json_name = "id"];</code>
-     */
-    protected $id = '';
-    /**
-     * Generated from protobuf field <code>string scopes = 11[json_name = "scopes"];</code>
+     * Generated from protobuf field <code>string scopes = 10[json_name = "scopes"];</code>
      */
     protected $scopes = '';
     /**
-     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 12[json_name = "purpose"];</code>
+     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 11[json_name = "purpose"];</code>
      */
     protected $purpose = 0;
 
@@ -64,7 +60,7 @@ class Connection extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type string $name
+     *     @type string $id
      *     @type string $client_id
      *     @type string $client_secret
      *     @type string $button_image_url
@@ -72,7 +68,6 @@ class Connection extends \Google\Protobuf\Internal\Message
      *     @type string $oidc_discovery_url
      *     @type string[]|\Google\Protobuf\Internal\RepeatedField $mfa
      *     @type int $type
-     *     @type string $id
      *     @type string $scopes
      *     @type int $purpose
      * }
@@ -83,23 +78,23 @@ class Connection extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      * @return string
      */
-    public function getName()
+    public function getId()
     {
-        return $this->name;
+        return $this->id;
     }
 
     /**
-     * Generated from protobuf field <code>string name = 1[json_name = "name"];</code>
+     * Generated from protobuf field <code>string id = 1[json_name = "id"];</code>
      * @param string $var
      * @return $this
      */
-    public function setName($var)
+    public function setId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->name = $var;
+        $this->id = $var;
 
         return $this;
     }
@@ -259,29 +254,7 @@ class Connection extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string id = 10[json_name = "id"];</code>
-     * @return string
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Generated from protobuf field <code>string id = 10[json_name = "id"];</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setId($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>string scopes = 11[json_name = "scopes"];</code>
+     * Generated from protobuf field <code>string scopes = 10[json_name = "scopes"];</code>
      * @return string
      */
     public function getScopes()
@@ -290,7 +263,7 @@ class Connection extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string scopes = 11[json_name = "scopes"];</code>
+     * Generated from protobuf field <code>string scopes = 10[json_name = "scopes"];</code>
      * @param string $var
      * @return $this
      */
@@ -303,7 +276,7 @@ class Connection extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 12[json_name = "purpose"];</code>
+     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 11[json_name = "purpose"];</code>
      * @return int
      */
     public function getPurpose()
@@ -312,7 +285,7 @@ class Connection extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 12[json_name = "purpose"];</code>
+     * Generated from protobuf field <code>.depot.devtools.auth.v0.identity.admin.GetConnectionsResponse.Purposes purpose = 11[json_name = "purpose"];</code>
      * @param int $var
      * @return $this
      */

@@ -30,9 +30,9 @@ class GetIdentityResponse extends \Google\Protobuf\Internal\Message
      */
     protected $main_identifier = '';
     /**
-     * Generated from protobuf field <code>string traits_id = 5[json_name = "traitsId"];</code>
+     * Generated from protobuf field <code>string profile_id = 5[json_name = "profileId"];</code>
      */
-    protected $traits_id = '';
+    protected $profile_id = '';
     /**
      * Generated from protobuf field <code>repeated string addresses_ids = 6[json_name = "addressesIds"];</code>
      */
@@ -60,7 +60,7 @@ class GetIdentityResponse extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Timestamp $created_at
      *     @type \Google\Protobuf\Timestamp $updated_at
      *     @type string $main_identifier
-     *     @type string $traits_id
+     *     @type string $profile_id
      *     @type string[]|\Google\Protobuf\Internal\RepeatedField $addresses_ids
      *     @type array|\Google\Protobuf\Internal\MapField $credentials_ids
      *     @type string $schema_id
@@ -161,23 +161,23 @@ class GetIdentityResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>string traits_id = 5[json_name = "traitsId"];</code>
+     * Generated from protobuf field <code>string profile_id = 5[json_name = "profileId"];</code>
      * @return string
      */
-    public function getTraitsId()
+    public function getProfileId()
     {
-        return $this->traits_id;
+        return $this->profile_id;
     }
 
     /**
-     * Generated from protobuf field <code>string traits_id = 5[json_name = "traitsId"];</code>
+     * Generated from protobuf field <code>string profile_id = 5[json_name = "profileId"];</code>
      * @param string $var
      * @return $this
      */
-    public function setTraitsId($var)
+    public function setProfileId($var)
     {
         GPBUtil::checkString($var, True);
-        $this->traits_id = $var;
+        $this->profile_id = $var;
 
         return $this;
     }
